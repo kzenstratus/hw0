@@ -10,7 +10,7 @@ import static org.junit.Assert.assertFalse;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-
+import java.util.Arrays;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -59,8 +59,8 @@ public class ContainersTest {
 
 	@Test
 	public void testSetCreation() {
-		Set<Integer> s1 = cont.initSet(intClassArray);
-		assertTrue("Size of set is correct", 4 == s1.size());
+        Set<Integer> s1 = cont.initSet(intClassArray);
+        assertTrue("Size of set is correct", 4 == s1.size());
 		assertTrue("Contains 4", s1.contains(intArray[2])); //Notice the autoboxing
 	}
 	
